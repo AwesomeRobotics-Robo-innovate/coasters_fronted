@@ -1,0 +1,136 @@
+<html lang="en"><head>
+    <link rel="icon" href="https://roboinnovate.mirmi.tum.de/assets/image-cache/standard.8632513e.roi_hackathon_key_visual_1080x1080_a.75947d89.webp">
+    <link rel="stylesheet" href="https://unpkg.com/mvp.css"> 
+
+    <meta charset="utf-8">
+    <meta name="description" content="My description">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Awesome Robotics</title>
+</head>
+
+<style>
+    :root {
+        --width-content:90%;
+        --width-card-wide:60%;
+    }
+
+    form {
+        flex-grow: 1;
+    }
+</style>
+
+<body>
+    <header>
+        <nav>
+            <a href="/"><img alt="Logo" src="https://roboinnovate.mirmi.tum.de/assets/image-cache/standard.8632513e.roi_hackathon_key_visual_1080x1080_a.75947d89.webp" height="70"></a>
+            <!-- <ul>
+                <li>Menu Item 1</li>
+                <li><a href="#section-1">Menu Item 2</a></li>
+                <li><a href="#">Dropdown Menu Item</a>
+                    <ul>
+                        <li><a href="#">Sublink with a long name</a></li>
+                        <li><a href="#">Short sublink</a></li>
+                    </ul>
+                </li>
+            </ul> -->
+            <h1>Awesome Robotics Etsy Shop</h1>
+        </nav>
+        <h1>Coaster Station</h1>
+        <p>Please select a design and <i>customize with your name</i>.</p>
+    </header>
+    <main>
+        <hr>
+        <section id="section-1"> 
+            <form action="engrave">   
+                {% if order_status %}
+                    <dialog style="display: flex;">{{ order_status }}</dialog>
+                {% endif %}
+                <header>
+                    <h2>Customization</h2>
+                    <p>Please select your favorit design and enter your name for customization</p>
+                </header>
+                
+                <label for="name">Input label:</label>
+                <input type="text" id="name" name="name" size="20" placeholder="Max Mustermann*">
+                <p><small>*be aware of character limitation</small></p>
+                <div style="display: flex;">
+                    <aside>
+                        <h3><input type="radio" id="design_rocket" name="design" value="rocket" required> Rocket*</h3>
+                        <img src="https://cdn-icons-png.flaticon.com/256/8005/8005258.png" \>
+                        <p><small>*seasonal ofer</small></p>
+                        
+                    </aside>
+                    <aside>
+                        <h3><input type="radio" id="design_brainstorm" name="design" value="brainstorm" required> Brainstorm<sup>new!</sup></h3>
+                        <img src="https://cdn-icons-png.flaticon.com/256/6684/6684503.png" \>
+                    </aside>
+                    <aside>
+                        <h3><input type="radio" id="design_idea" name="design" value="idea" required> Idea</h3>
+                        <img src="https://cdn-icons-png.flaticon.com/256/6467/6467772.png" \>
+                    </aside>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <hr>
+        <section>
+            <blockquote>
+                "Don't get a mugshoot, get your shot on a mug!"
+                <footer><i>- Awesome Robotics Team</i></footer>
+            </blockquote>
+        </section>
+        <hr>
+        <section>
+            <header>
+                <h2>Pricing</h2>
+            </header>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Time</th>
+                    </tr>
+                </thead>
+                <tbody><tr>
+                    <td>Mug</td>
+                    <td>2€</td>
+                    <td>5 minutes</td>
+                </tr>
+                <tr>
+                    <td>Coasters</td>
+                    <td>X€</td>
+                    <td>60 seconds</td>
+                </tr>
+            </tbody></table>
+        </section>
+        <hr>
+        <article>
+            <h2>Our Experience: Building an Autonomous Etsy-Like Shop</h2>
+            <p>Reflecting on our hackathon journey, we successfully created an (almost) fully autonomous Etsy-like shop specializing in custom printed mugs and custom engraved coasters. This retrospective highlights our achievements, challenges, and key learnings from the event.</p>
+            <aside>
+                <p>A look back at our innovative hackathon project!</p>
+            </aside>
+            <ul>
+                <li>Developed a user-friendly interface that allowed customers to design their own coasters, enhancing the personalization experience.</li>
+                <li>Implemented automated printing and engraving processes, significantly improving production efficiency and reducing manual labor.</li>
+                <li>Advertised our products and made our first sales.</li>
+                <li>Overcame technical and organizational challenges related to the KISS-principle and what to automate, leading to a smoother customer and engineering experience.</li>
+            </ul>
+            <figure>
+                <img alt="Stock photo" src="https://via.placeholder.com/1080x500?text=Amazing+stock+photo">
+                <figcaption><i>Our team celebrating the successful launch of the autonomous shop.</i></figcaption>
+            </figure>
+        </article>
+    </main>
+    <footer>
+        <hr>
+        <p>
+            <small>@Aweseome Robotics - Team</small>
+        </p>
+    </footer>
+
+
+
+</body></html>
